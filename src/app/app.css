@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+.section-kicker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #86868b;
+}
+
+.soft-link:hover {
+  opacity: 0.75;
+  border-color: #b0b0b6;
+}
