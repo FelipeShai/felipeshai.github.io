@@ -7,6 +7,12 @@
 					<p class="content-card__tag">{{ item.tag }}</p>
 					<h2 class="content-card__title">{{ item.title }}</h2>
 					<p class="content-card__description">{{ item.description }}</p>
+					@if (item.href) {
+						<a class="content-card__link" [href]="item.href">
+							{{ item.actionLabel ?? 'Ver detalhes' }}
+							<span aria-hidden="true">→</span>
+						</a>
+					}
 				</article>
 			}
 		</div>

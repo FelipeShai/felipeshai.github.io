@@ -7,9 +7,9 @@ export interface ContactChannel {
 
 export const contatoHero = {
   eyebrow: 'Contato',
-  title: 'Vamos conversar sobre o seu proximo desafio',
+  title: 'Vamos conversar sobre o seu próximo desafio',
   description:
-    'Estou disponivel para oportunidades em backend, arquitetura de software e projetos de consultoria com foco em resultado de negocio.',
+    'Estou disponível para oportunidades em backend, arquitetura de software e projetos de consultoria com foco em resultado de negócio.',
 } as const;
 
 export const contatoChannels: readonly ContactChannel[] = [
@@ -17,7 +17,7 @@ export const contatoChannels: readonly ContactChannel[] = [
     label: 'WhatsApp',
     value: '+55 71 99124-7146',
     href: 'https://wa.me/5571991247146',
-    note: 'Canal mais rapido para primeiro contato.',
+    note: 'Canal mais rápido para primeiro contato.',
   },
   {
     label: 'E-mail',
@@ -29,12 +29,12 @@ export const contatoChannels: readonly ContactChannel[] = [
     label: 'LinkedIn',
     value: 'linkedin.com/in/felipeshai',
     href: 'https://www.linkedin.com/in/felipeshai/',
-    note: 'Networking e historico profissional.',
+    note: 'Networking e histórico profissional.',
   },
   {
     label: 'GitHub',
     value: 'github.com/FelipeShai',
     href: 'https://github.com/FelipeShai',
-    note: 'Projetos, estudos e repositorios publicos.',
+    note: 'Projetos, estudos e repositórios públicos.',
   },
 ] as const;

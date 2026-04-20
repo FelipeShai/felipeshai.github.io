@@ -1,0 +1,28 @@
+<main id="top" class="page">
+  <div class="page__container">
+    <section class="blog-hero section-border">
+      <p class="blog-hero__eyebrow">Blog</p>
+      <h1 class="blog-hero__title">Publicacões técnicas</h1>
+      <p class="blog-hero__description">
+        Artigos sobre Java, arquitetura e decisões de engenharia a partir da minha perspectiva.
+      </p>
+    </section>
+
+    <section class="post-list" aria-label="Lista de artigos">
+      @for (post of posts; track post.slug) {
+        <article class="post-card">
+          <p class="post-card__meta">{{ post.publishedAt }} · {{ post.readingTime }}</p>
+          <h2 class="post-card__title">
+            <a [routerLink]="['/blog', post.slug]">{{ post.title }}</a>
+          </h2>
+          <p class="post-card__description">{{ post.description }}</p>
+          <ul class="post-card__tags" aria-label="Tags do artigo">
+            @for (tag of post.tags; track tag) {
+              <li>{{ tag }}</li>
+            }
+          </ul>
+        </article>
+      }
+    </section>
+  </div>
+</main>

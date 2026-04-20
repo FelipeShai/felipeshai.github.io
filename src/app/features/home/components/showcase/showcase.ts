@@ -4,6 +4,8 @@ interface ShowcaseItem {
   tag: string;
   title: string;
   description: string;
+  href?: string;
+  actionLabel?: string;
 }
 
 @Component({

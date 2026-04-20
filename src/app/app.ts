@@ -32,14 +32,14 @@ export class App {
   protected readonly headerLinks: HeaderLink[] = [
     { label: 'Trajetória', href: '/trajetoria' },
     { label: 'Projetos', href: '/#projetos' },
-    { label: 'Blog', href: '/#blog' },
+    { label: 'Blog', href: '/blog' },
     { label: 'Contato', href: '/contato' },
   ];
 
   protected readonly footerNavigation: FooterLink[] = [
     { label: 'Projetos', href: '/#projetos' },
     { label: 'Trajetória', href: '/trajetoria' },
-    { label: 'Blog', href: '/#blog' },
+    { label: 'Blog', href: '/blog' },
     { label: 'Contato', href: '/contato' },
   ];
 

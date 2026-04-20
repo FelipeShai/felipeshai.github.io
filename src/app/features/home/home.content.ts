@@ -1,10 +1,10 @@
 export const homeProfile = {
   name: 'Felipe Shai',
   role: 'Engenheiro de Software',
-  headline: 'Backend com enfase em Java',
+  headline: 'Backend com ênfase em Java',
   location: 'Salvador, BA',
   intro:
-    'E-commerces, pagamentos, crédito e logística em larga escala com times multidisciplinares. Projetos nacionais e internacionais com foco em arquitetura robusta e qualidade continua.',
+    'E-commerces, pagamentos, crédito e logística em larga escala com times multidisciplinares. Projetos nacionais e internacionais com foco em arquitetura robusta e qualidade contínua.',
 } as const;
 
 export const homePrimaryAction = {
@@ -15,7 +15,7 @@ export const homePrimaryAction = {
 export const homeSocialLinks = [
   { label: 'GitHub', href: 'https://github.com/FelipeShai' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/felipeshai/' },
-  { label: 'Blog', href: 'https://github.com/FelipeShai' },
+  { label: 'Blog', href: '/blog' },
 ] as const;
 
 export const homeTrajectoryPreview = {
@@ -41,7 +41,7 @@ export const homeHeroCompetencies = [
   'Testes: unitário · integração · mutação · API',  
 ] as const;
 
-export const homeAvailabilityText = 'Disponivel para projetos remotos';
+export const homeAvailabilityText = 'Disponível para projetos remotos';
 
 export const homeCompanySection = {
   eyebrow: 'Empresas',
@@ -73,23 +73,25 @@ export const homeCompanySection = {
 export const homeShowcaseItems = [
   {
     tag: 'Em breve',
-    title: 'Projetos selecionados',
+    title: 'Em breve',
     description:
-      'Espaco reservado para estudos de arquitetura, automacao e iniciativas praticas que merecem destaque.',
+      'Em desenvolvimento.',
   },
   {
-    tag: 'Organizacao',
-    title: 'Conteudo em camadas',
+    tag: 'Em breve',
+    title: 'Em breve',
     description:
-      'A estrutura atual ja deixa pronto o terreno para transformar cada bloco em uma pagina propria no futuro.',
+      'Em desenvolvimento.',
   },
 ] as const;
 
 export const homeBlogHighlights = [
   {
-    tag: 'Notas tecnicas',
-    title: 'Blog minimalista',
+    tag: 'Primeira publicação',
+    title: 'Cloneable no Java: shallow copy, deep copy e por que evitar',
     description:
-      'Um espaco enxuto para artigos, aprendizados e decisoes de engenharia que valem registro.',
+      'Uma análise sobre os riscos de Cloneable e alternativas mais seguras para cópia de objetos no Java moderno.',
+    href: '/blog/cloneable-java-deep-copy',
+    actionLabel: 'Ler artigo',
   },
 ] as const;
