@@ -1,0 +1,24 @@
+<main id="top" class="page">
+  <div class="page__container">
+    <section class="contact-hero section-border">
+      <p class="contact-hero__eyebrow">{{ hero.eyebrow }}</p>
+      <h1 class="contact-hero__title">{{ hero.title }}</h1>
+      <p class="contact-hero__description">{{ hero.description }}</p>
+    </section>
+
+    <section class="contact-list" aria-label="Canais de contato">
+      @for (channel of channels; track channel.label) {
+        <a
+          class="contact-card"
+          [href]="channel.href"
+          [attr.target]="channel.label === 'E-mail' ? null : '_blank'"
+          rel="noreferrer"
+        >
+          <p class="contact-card__label">{{ channel.label }}</p>
+          <p class="contact-card__value">{{ channel.value }}</p>
+          <p class="contact-card__note">{{ channel.note }}</p>
+        </a>
+      }
+    </section>
+  </div>
+</main>

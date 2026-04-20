@@ -1,5 +1,24 @@
 export const trajetoriaExperience = [
   {
+    company: 'ACT Digital',
+    role: 'Engenheiro de Software (Consultoria Banco PAN e BTG)',
+    period: 'Fev 2026 - Atual',
+    location: 'Remoto',
+    summary:
+      'Atuação em projetos do escopo de INSS e Cartão de Crédito para Banco PAN e Banco BTG, com foco em backend distribuído, integração entre serviços e alta confiabilidade.',
+    highlights: [
+      'Backend com Java 21, Spring Boot e Spring Cloud',
+      'API-First com OpenAPI, Maven, MapStruct, Lombok, ArchUnit e JUnit 5',
+      'Integrações via Spring Cloud OpenFeign e Feign Clients',
+      'Mensageria com Apache Kafka, Confluent e contratos Avro',
+      'Segurança com Spring Security e gestão de segredos com AWS Secrets Manager',
+      'Cache distribuido com Redis para ganho de performance',
+      'Observabilidade com Jaeger + OpenTelemetry, Prometheus + Micrometer e logs JSON com Logback + Logstash',
+      'Qualidade continua com SonarQube + JaCoCo',
+      'Arquitetura hexagonal, microserviços e abordagem orientada a eventos',
+    ],
+  },
+  {
     company: 'PagBank',
     role: 'Engenheiro de Software',
     period: 'Mar 2024 - Fev 2026',
