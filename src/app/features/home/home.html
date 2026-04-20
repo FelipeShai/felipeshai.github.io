@@ -1,0 +1,49 @@
+<main id="top" class="page">
+	<div class="page__container">
+		<app-hero
+			[profile]="profile"
+			[primaryAction]="primaryAction"
+			[socialLinks]="socialLinks"
+			[metrics]="heroMetrics"
+			[keyCompetencies]="heroCompetencies"
+			[availabilityText]="availabilityText"
+		></app-hero>
+
+		<section class="trajectory-section">
+			<div class="trajectory-section__inner">
+				<div class="trajectory-section__intro">
+					<p class="trajectory-section__eyebrow">{{ trajectoryEyebrow }}</p>
+					<h2 class="trajectory-section__title">{{ trajectoryTitle }}</h2>
+				</div>
+
+				<div class="trajectory-section__body">
+					<p class="trajectory-section__description">{{ trajectoryDescription }}</p>
+					<a class="trajectory-section__link" [href]="trajectoryActionHref">
+						{{ trajectoryActionLabel }}
+						<span aria-hidden="true">→</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<app-company-grid
+			[eyebrow]="companyEyebrow"
+			[title]="companyTitle"
+			[items]="companyItems"
+		></app-company-grid>
+
+		<app-showcase
+			[sectionId]="'projetos'"
+			[title]="'Projetos'"
+			[items]="showcaseItems"
+			[twoColumns]="true"
+		></app-showcase>
+
+		<app-showcase
+			[sectionId]="'blog'"
+			[title]="'Blog'"
+			[items]="blogHighlights"
+			[narrowCards]="true"
+		></app-showcase>
+	</div>
+</main>

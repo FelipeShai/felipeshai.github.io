@@ -1,0 +1,82 @@
+:host {
+	display: block;
+}
+
+.company-grid {
+	border-top: 0.5px solid #e3e3e3;
+	border-bottom: 0.5px solid #e3e3e3;
+	padding: 4.5rem 0;
+}
+
+.company-grid__inner {
+	display: grid;
+	gap: 2rem;
+}
+
+.company-grid__header {
+	display: grid;
+	gap: 0.75rem;
+}
+
+.company-grid__eyebrow {
+	margin: 0;
+	color: #6d6d6d;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.company-grid__title {
+	margin: 0;
+	color: #141414;
+	font-size: clamp(1.5rem, 3vw, 2.25rem);
+	font-weight: 500;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+}
+
+.company-grid__list {
+	display: grid;
+	gap: 0.75rem;
+}
+
+.company-grid__card {
+	min-height: 8.5rem;
+	border: 0.5px solid #dcdcdc;
+	border-radius: 0.85rem;
+	background: #fafafa;
+	padding: 1.5rem 1.35rem;
+	display: grid;
+	align-content: center;
+	gap: 0.45rem;
+}
+
+.company-grid__company {
+	margin: 0;
+	color: #111111;
+	font-size: 1.05rem;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+}
+
+.company-grid__role {
+	margin: 0;
+	color: #4b4b4b;
+	font-size: 0.95rem;
+	font-weight: 400;
+	line-height: 1.35;
+}
+
+.company-grid__period {
+	margin: 0;
+	color: #6f6f6f;
+	font-size: 0.82rem;
+	font-weight: 400;
+}
+
+@media (min-width: 760px) {
+	.company-grid__list {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}

@@ -1,0 +1,81 @@
+:host {
+  display: block;
+}
+
+.timeline {
+  display: grid;
+  gap: 2rem;
+}
+
+.timeline__item {
+  display: grid;
+  gap: 1rem;
+  border-bottom: 1px solid #e5e5e7;
+  padding-bottom: 1.75rem;
+}
+
+.timeline__item:last-child {
+  border-bottom: 0;
+}
+
+.timeline__period,
+.timeline__location {
+  margin: 0;
+  color: #86868b;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.timeline__period {
+  letter-spacing: 0.02em;
+}
+
+.timeline__location {
+  margin-top: 0.25rem;
+}
+
+.timeline__content {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.timeline__company {
+  margin: 0;
+  color: #1d1d1f;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.timeline__role {
+  margin: 0;
+  color: #1d1d1f;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.timeline__summary {
+  margin: 0;
+  color: #86868b;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.timeline__highlights {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.timeline__highlight {
+  color: #86868b;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .timeline__item {
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 2rem;
+  }
+}

@@ -1,10 +1,13 @@
 import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { App } from './app';
+import { routes } from './app.routes';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
+      providers: [provideRouter(routes)],
     }).compileComponents();
   });
 
@@ -14,10 +17,11 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render the professional title', () => {
+  it('should render the header brand name', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Felipe Shai');
+    expect(compiled.querySelector('.header__brand')?.textContent).toContain('Felipe Shai');
+    expect(compiled.querySelector('.footer__brand')?.textContent).toContain('Felipe Shai');
   });
 });

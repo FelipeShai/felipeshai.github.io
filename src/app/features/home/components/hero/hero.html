@@ -1,0 +1,68 @@
+<section class="hero section-border">
+	<div class="hero__main">
+		<p class="hero__context">{{ profile().role }} · {{ profile().location }}</p>
+		<h1 class="hero__title">{{ profile().headline }}</h1>
+		<p class="hero__intro">{{ profile().intro }}</p>
+
+		<div id="contato" class="hero__actions">
+			<a class="hero__button hero__button--primary" [href]="primaryAction().href">
+				{{ primaryAction().label }}
+			</a>
+
+			@for (link of socialLinks(); track link.label) {
+				<a class="hero__button hero__button--outline" [href]="link.href" rel="noopener" target="_blank">
+					{{ link.label }}
+				</a>
+			}
+		</div>
+	</div>
+
+	<div class="hero__aside">
+		<div class="hero__metrics" aria-label="Métricas principais">
+			@for (metric of metrics(); track metric.label) {
+				<article class="hero__metric-card">
+					<p class="hero__metric-value">{{ metric.value }}</p>
+					<p class="hero__metric-label">{{ metric.label }}</p>
+				</article>
+			}
+		</div>
+
+		@if (availabilityText()) {
+			<p class="hero__availability">
+				<span class="hero__availability-dot" aria-hidden="true"></span>
+				{{ availabilityText() }}
+			</p>
+		}
+
+		<ul class="hero__competencies">
+			@for (competency of keyCompetencies(); track competency; let i = $index) {
+				<li class="hero__competency-item">
+					<span class="hero__competency-icon" aria-hidden="true">
+						@switch (i) {
+							@case (0) {
+								<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.5 6L3.5 10L7.5 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12.5 6L16.5 10L12.5 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							}
+							@case (1) {
+								<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="4" y="3.5" width="12" height="13" rx="2" stroke="currentColor" stroke-width="1.5" />
+									<path d="M7 7.5H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M7 11H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+								</svg>
+							}
+							@default {
+								<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5" />
+									<path d="M7 10.5L9 12.5L13 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							}
+						}
+					</span>
+					<span>{{ competency }}</span>
+				</li>
+			}
+		</ul>
+	</div>
+</section>

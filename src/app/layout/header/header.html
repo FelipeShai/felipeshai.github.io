@@ -1,0 +1,15 @@
+<header class="header">
+	<div class="header__inner">
+		<a class="header__brand" href="#top">
+			{{ name() }}
+		</a>
+
+		<nav class="header__nav" aria-label="Navegacao principal">
+			@for (item of items(); track item.label) {
+				<a class="header__link" [href]="item.href">
+					{{ item.label }}
+				</a>
+			}
+		</nav>
+	</div>
+</header>

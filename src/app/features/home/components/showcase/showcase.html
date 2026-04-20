@@ -1,0 +1,14 @@
+<section [attr.id]="sectionId()" class="section-block section-border">
+	<div class="stack-lg">
+		<p class="section-kicker">{{ title() }}</p>
+		<div class="cards" [class.cards--two-up]="twoColumns()">
+			@for (item of items(); track item.title) {
+				<article class="content-card" [class.content-card--narrow]="narrowCards()">
+					<p class="content-card__tag">{{ item.tag }}</p>
+					<h2 class="content-card__title">{{ item.title }}</h2>
+					<p class="content-card__description">{{ item.description }}</p>
+				</article>
+			}
+		</div>
+	</div>
+</section>

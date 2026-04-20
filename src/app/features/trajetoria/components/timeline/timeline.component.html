@@ -1,0 +1,22 @@
+<div class="timeline">
+  @for (item of items(); track item.company + item.period) {
+    <article class="timeline__item">
+      <div class="timeline__meta">
+        <p class="timeline__period">{{ item.period }}</p>
+        <p class="timeline__location">{{ item.location }}</p>
+      </div>
+
+      <div class="timeline__content">
+        <h3 class="timeline__company">{{ item.company }}</h3>
+        <p class="timeline__role">{{ item.role }}</p>
+        <p class="timeline__summary">{{ item.summary }}</p>
+
+        <ul class="timeline__highlights">
+          @for (highlight of item.highlights; track highlight) {
+            <li class="timeline__highlight">{{ highlight }}</li>
+          }
+        </ul>
+      </div>
+    </article>
+  }
+</div>

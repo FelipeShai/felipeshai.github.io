@@ -1,5 +1,4 @@
-import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 interface TimelineItem {
   company: string;
@@ -7,16 +6,15 @@ interface TimelineItem {
   period: string;
   location: string;
   summary: string;
-  highlights: string[];
+  highlights: readonly string[];
 }
 
 @Component({
   selector: 'app-timeline',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './timeline.component.html',
+  styleUrls: ['./timeline.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TimelineComponent {
-  @Input({ required: true }) items: readonly TimelineItem[] = [];
+  readonly items = input.required<readonly TimelineItem[]>();
 }

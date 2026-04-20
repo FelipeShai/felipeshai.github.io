@@ -1,0 +1,18 @@
+<section class="company-grid section-border">
+	<div class="company-grid__inner">
+		<div class="company-grid__header">
+			<p class="company-grid__eyebrow">{{ eyebrow() }}</p>
+			<h2 class="company-grid__title">{{ title() }}</h2>
+		</div>
+
+		<div class="company-grid__list">
+			@for (item of items(); track item.company) {
+				<article class="company-grid__card">
+					<p class="company-grid__company">{{ item.company }}</p>
+					<p class="company-grid__role">{{ item.role }}</p>
+					<p class="company-grid__period">{{ item.period }}</p>
+				</article>
+			}
+		</div>
+	</div>
+</section>
