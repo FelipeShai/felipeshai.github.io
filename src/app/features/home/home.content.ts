@@ -45,7 +45,7 @@ export const homeAvailabilityText = 'Disponivel para projetos remotos';
 
 export const homeCompanySection = {
   eyebrow: 'Empresas',
-  title: 'Marcas e times em que atuei',
+  title: 'Times em que atuei',
   items: [
     {
       company: 'ACT Digital',
