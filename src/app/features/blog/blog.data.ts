@@ -1,7 +1,11 @@
 import { BlogPost } from './blog.types';
+import { comandosLinuxEssenciaisTerminalPost } from './posts/comandos-linux-essenciais-terminal.post';
 import { cloneableJavaDeepCopyPost } from './posts/cloneable-java-deep-copy.post';
 
-export const blogPosts: readonly BlogPost[] = [cloneableJavaDeepCopyPost] as const;
+export const blogPosts: readonly BlogPost[] = [
+  comandosLinuxEssenciaisTerminalPost,
+  cloneableJavaDeepCopyPost,
+] as const;
 
 export const featuredPostSlug = cloneableJavaDeepCopyPost.slug;
 

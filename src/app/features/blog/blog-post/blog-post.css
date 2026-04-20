@@ -153,6 +153,44 @@
   text-decoration-color: #1b1b1b;
 }
 
+.command-block {
+  margin: 0.95rem 0 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.command-item {
+  border: 1px solid #d6d6d6;
+  border-radius: 0.75rem;
+  background: linear-gradient(180deg, #f7f7f7 0%, #efefef 100%);
+  overflow: hidden;
+}
+
+.command-item pre {
+  margin: 0;
+  padding: 0.75rem 1rem 0.5rem;
+}
+
+.command-item code {
+  font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #232323;
+}
+
+.command-line {
+  display: block;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.command-description {
+  margin: 0;
+  padding: 0 1rem 0.75rem;
+  font-size: 0.9rem;
+  color: #424242;
+  line-height: 1.5;
+}
+
 .source-list a,
 .reference-list a {
   color: #4f79b3;

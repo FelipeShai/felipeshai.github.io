@@ -34,6 +34,17 @@
                 </ul>
               }
 
+              @if (section.commands?.length) {
+                <div class="command-block" role="region" aria-label="Comandos de terminal">
+                  @for (cmd of section.commands; track cmd.command) {
+                    <div class="command-item">
+                      <pre><code><span class="command-line">$ {{ cmd.command }}</span></code></pre>
+                      <p class="command-description">{{ cmd.description }}</p>
+                    </div>
+                  }
+                </div>
+              }
+
               @if (section.quotes?.length) {
                 @for (quote of section.quotes; track quote) {
                   <blockquote>{{ quote }}</blockquote>

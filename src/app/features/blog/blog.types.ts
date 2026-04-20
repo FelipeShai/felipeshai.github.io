@@ -3,10 +3,16 @@ export interface BlogPostReference {
   href: string;
 }
 
+export interface CommandItem {
+  command: string;
+  description: string;
+}
+
 export interface BlogPostSection {
   title: string;
   paragraphs?: readonly string[];
   bullets?: readonly string[];
+  commands?: readonly CommandItem[];
   quotes?: readonly string[];
   links?: readonly BlogPostReference[];
 }

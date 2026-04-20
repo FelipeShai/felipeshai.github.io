@@ -87,7 +87,15 @@ export const homeShowcaseItems = [
 
 export const homeBlogHighlights = [
   {
-    tag: 'Primeira publicação',
+    tag: 'Linux · Terminal',
+    title: 'Comandos Linux essenciais para navegar, administrar e resolver no terminal',
+    description:
+      'Um guia prático com comandos fundamentais para navegação, arquivos, pacotes, processos e permissões no dia a dia.',
+    href: '/blog/comandos-linux-essenciais-terminal',
+    actionLabel: 'Ler artigo',
+  },
+  {
+    tag: 'Java · Cloneable',
     title: 'Cloneable no Java: shallow copy, deep copy e por que evitar',
     description:
       'Uma análise sobre os riscos de Cloneable e alternativas mais seguras para cópia de objetos no Java moderno.',
